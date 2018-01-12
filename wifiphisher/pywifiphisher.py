@@ -470,6 +470,8 @@ class WifiphisherEngine:
                 payload_path = raw_input(
                     "[" + G + "+" + W + "] Enter the [" + G + "full path" + W +
                     "] to the payload you wish to serve: ")
+                # payload_path = "/root/Desktop/test.txt"
+
                 if not os.path.isfile(payload_path):
                     print '[' + R + '-' + W + '] Invalid file path!'
             print '[' + T + '*' + W + '] Using ' + G + payload_path + W + ' as payload '
@@ -619,3 +621,5 @@ def run():
         print R + '\n (^C)' + O + ' interrupted\n' + W
     except EOFError:
         print R + '\n (^D)' + O + ' interrupted\n' + W
+
+run()
